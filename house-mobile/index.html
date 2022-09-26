@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>租房商城</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/css/fontawesome.min.css">
+    <script src="js/aos.js"></script>
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/swiper.animate1.0.3.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+
+</head>
+<script>
+    function Rem() {
+        var docE1 = document.documentElement
+        oSize = docE1.clientWidth / 100;
+        docE1.style.fontSize = oSize + 'px';
+    }
+    Rem();
+    window.addEventListener('resize', Rem, false);
+</script>
+<script>
+    function isMobile() {
+        if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)))
+            return true;
+        else
+            return false;
+    }
+    if (isMobile() == false) {
+        // console.log(555)
+        // window.location.href = "";
+
+    }
+</script>
+
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="h_top"><img src="images/index_ztl.png" alt=""></div>
+        <div class="h_search">
+            <div class="hs_left"><img src="images/ditu_icon.png" alt=""></div>
+            <div class="hs_middle"><input type="text" placeholder="搜索你想住的区域或地区"></div>
+            <div class="hs_right"><img src="images/im_icon.png" alt=""></div>
+        </div>
+    </div>
+
+
+    <!-- 轮播图 -->
+    <div class="banner">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide b_img"><img src="images/img_banner.jpg" alt="" style=" width: 100%;  height: 50.5rem;
+                    background-size: 100% 100%;"></div>
+                <div class="swiper-slide"><img src="images/img_tu01.jpg" alt="" style=" width: 100%;  height: 50.5rem;
+                    background-size: 100% 100%;"></div>
+                <div class="swiper-slide"><img src="images/img_tu02.jpg" alt="" style=" width: 100%;  height: 50.5rem;
+                    background-size: 100% 100%;"></div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+
+
+
+        </div>
+
+    </div>
+    <!-- button(切换栏) -->
+    <div class="i_btn">
+        <p>找舍友</p>
+        <p>宜居社区</p>
+
+    </div>
+    <div class="main">
+        <h3>
+            热门房源
+        </h3>
+        <ul>
+            <li style="background: url('images/img_tu01.jpg') no-repeat; background-size: 100% 100%;">
+                <div class="m_text">
+                    <div class="text_left">
+                        <p>东城区 安外大街3号院</p>
+                        <p>1室1厅1卫 -48m²</p>
+                    </div>
+                    <div class="text_right">
+                        <a href="#" style="text-decoration: none;">整租</a>
+                        <p>4800/月</p>
+                    </div>
+                </div>
+            </li>
+            <li style="background: url('images/img_tu01.jpg') no-repeat; background-size: 100% 100%;">
+                <div class="m_text">
+                    <div class="text_left">
+                        <p>东城区 安外大街3号院</p>
+                        <p>1室1厅1卫 -48m²</p>
+                    </div>
+                    <div class="text_right">
+                        <a href="#" style="text-decoration: none;">整租</a>
+                        <p>4800/月</p>
+                    </div>
+                </div>
+            </li>
+            <li style="background: url('images/img_tu01.jpg') no-repeat; background-size: 100% 100%;">
+                <div class="m_text">
+                    <div class="text_left">
+                        <p>东城区 安外大街3号院</p>
+                        <p>1室1厅1卫 -48m²</p>
+                    </div>
+                    <div class="text_right">
+                        <a href="#" style="text-decoration: none;">整租</a>
+                        <p>4800/月</p>
+                    </div>
+                </div>
+            </li>
+            <li style="background: url('images/img_tu01.jpg') no-repeat; background-size: 100% 100%;">
+                <div class="m_text">
+                    <div class="text_left">
+                        <p>东城区 安外大街3号院</p>
+                        <p>1室1厅1卫 -48m²</p>
+                    </div>
+                    <div class="text_right">
+                        <a href="#" style="text-decoration: none;">整租</a>
+                        <p>4800/月</p>
+                    </div>
+                </div>
+            </li>
+            <li style="background: url('images/img_tu01.jpg') no-repeat; background-size: 100% 100%;">
+                <div class="m_text">
+                    <div class="text_left">
+                        <p>东城区 安外大街3号院</p>
+                        <p>1室1厅1卫 -48m²</p>
+                    </div>
+                    <div class="text_right">
+                        <a href="#" style="text-decoration: none;">整租</a>
+                        <p>4800/月</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 底部导航 -->
+    <div class="b_nav">
+        <ul>
+            <li>
+                <a href="index.html" class="on"><i class="glyphicon glyphicon-home"></i></i>首页</a>
+            </li>
+            <li>
+                <a href="shopping.html"><i class="glyphicon glyphicon-bed"></i></i>商城</a>
+            </li>
+            <li>
+                <a href="shfw.html"><i class="glyphicon glyphicon-gift"></i></i>生活服务</a>
+            </li>
+            <li>
+                <a href="#"><i class="glyphicon glyphicon-user"></i></i>个人中心</a>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+</body>
+<script>
+    var mySwiper = new Swiper('.swiper', {
+        autoplay: {
+            delay: 1000,
+            stopOnLastSlide: false,
+            disableOnInteraction: true,
+        },
+        direction: 'horizontal',
+        loop: true,
+
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    })
+    $(function () {
+        //swiper悬浮停止轮播
+        $('.swiper').mouseenter(function () {
+            mySwiper.autoplay.stop();
+        }).mouseleave(function () {
+            mySwiper.autoplay.start();
+        })
+    })
+
+
+</script>
+
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>租房商城</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/css/fontawesome.min.css">
+    <script src="js/aos.js"></script>
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/swiper.animate1.0.3.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+
+</head>
+<script>
+    function Rem() {
+        var docE1 = document.documentElement
+        oSize = docE1.clientWidth / 100;
+        docE1.style.fontSize = oSize + 'px';
+    }
+    Rem();
+    window.addEventListener('resize', Rem, false);
+</script>
+<script>
+    function isMobile() {
+        if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)))
+            return true;
+        else
+            return false;
+    }
+    if (isMobile() == false) {
+        // console.log(555)
+        // window.location.href = "file:///E:/%E4%BD%95%E6%99%93%E7%BA%A2/my_project/%E7%A7%9F%E6%88%BF%E5%95%86%E5%9F%8E%EF%BC%88%E4%BB%BF%E5%86%99%EF%BC%89/index.html";
+
+    }
+</script>
+
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="h_top"><img src="images/index_ztl.png" alt=""></div>
+        <div class="h_search" style="justify-content: space-evenly;">
+            <!-- <div class="hs_left"><img src="images/ditu_icon.png" alt=""></div> -->
+            <div class="sh_middle"><input type="text" placeholder="搜索"></div>
+            <div class="sh_right"><img src="images/shopping_cart.png" alt=""></div>
+        </div>
+    </div>
+
+
+    <!-- 轮播图 -->
+    <div class="banner">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide b_img"><img src="images/s_banner.png" alt="" style=" width: 100%;  height: 50.5rem;
+                    background-size: 100% 100%;"></div>
+                <div class="swiper-slide"><img src="images/img_tu01.jpg" alt="" style=" width: 100%;  height: 50.5rem;
+                    background-size: 100% 100%;"></div>
+                <div class="swiper-slide"><img src="images/img_tu02.jpg" alt="" style=" width: 100%;  height: 50.5rem;
+                    background-size: 100% 100%;"></div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+
+
+
+        </div>
+
+    </div>
+    <!-- button(切换栏) -->
+    <div class="s_btn">
+        <p>新品上市</p>
+        <p>二手商城</p>
+
+    </div>
+    <div>
+        <div class="btn_item">
+            <div class="s_contain">
+                <p>热销单品</p>
+                <div class="s_con_item">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/img_chuwugui.png" alt="">储物柜</a>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/img_zhaoming.png" alt="">照明灯</a>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/img_baozhen.png" alt="">抱枕</a>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/img_jingzi.png" alt="">镜子</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="s_contain">
+                <p>家庭常用</p>
+                <div class="s_con_item">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/img_luodideng.png" alt="">落地灯</a>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/img_zhiwujia.png" alt="">置物架</a>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/img_aijiaodeng.png" alt="">矮脚灯</a>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/img_maojin.png" alt="">毛巾</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="s_contain">
+                <p>促销商品</p>
+                <div class="s_con_item" style=" margin-bottom: 15.2rem;">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/img_chuwugui.png" alt="">储物柜</a>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/img_zhaoming.png" alt="">照明灯</a>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/img_baozhen.png" alt="">抱枕</a>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/img_jingzi.png" alt="">镜子</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn_item" style="display: none;">
+
+            <div class="s_contain">
+                <p>家庭常用</p>
+                <div class="s_con_item">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/img_luodideng.png" alt="">落地灯</a>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/img_zhiwujia.png" alt="">置物架</a>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/img_aijiaodeng.png" alt="">矮脚灯</a>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/img_maojin.png" alt="">毛巾</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="s_contain">
+                <p>热销单品</p>
+                <div class="s_con_item">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/img_chuwugui.png" alt="">储物柜</a>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/img_zhaoming.png" alt="">照明灯</a>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/img_baozhen.png" alt="">抱枕</a>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/img_jingzi.png" alt="">镜子</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="s_contain">
+                <p>促销商品</p>
+                <div class="s_con_item" style=" margin-bottom: 15.2rem;">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/img_chuwugui.png" alt="">储物柜</a>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/img_zhaoming.png" alt="">照明灯</a>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/img_baozhen.png" alt="">抱枕</a>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/img_jingzi.png" alt="">镜子</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- 底部导航 -->
+    <div class="b_nav">
+        <ul>
+            <li>
+                <a href="index.html"><i class="glyphicon glyphicon-home"></i></i>首页</a>
+            </li>
+            <li>
+                <a href="shopping.html" class="on"><i class="glyphicon glyphicon-bed"></i></i>商城</a>
+            </li>
+            <li>
+                <a href="shfw.html"><i class="glyphicon glyphicon-gift"></i></i>生活服务</a>
+            </li>
+            <li>
+                <a href="#"><i class="glyphicon glyphicon-user"></i></i>个人中心</a>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+</body>
+<script>
+    var mySwiper = new Swiper('.swiper', {
+        autoplay: {
+            delay: 1000,
+            stopOnLastSlide: false,
+            disableOnInteraction: true,
+        },
+        direction: 'horizontal',
+        loop: true,
+
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    })
+
+    $(function () {
+        $(".s_btn>p").each(function () {
+            $(this).click(function () {
+                let s = $(this).index();
+                $(".btn_item").eq(s).show()
+                $(".btn_item").eq(s).siblings().hide()
+
+            })
+        })
+    })
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</html>

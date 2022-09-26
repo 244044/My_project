@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>租房商城</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="css/css/fontawesome.min.css"> -->
+    <script src="js/aos.js"></script>
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/swiper.animate1.0.3.min.js"></script>
+    <!-- <script src="js/fontawesome.min.js"></script> -->
+
+</head>
+<script>
+    function Rem() {
+        var docE1 = document.documentElement
+        oSize = docE1.clientWidth / 100;
+        docE1.style.fontSize = oSize + 'px';
+    }
+    Rem();
+    window.addEventListener('resize', Rem, false);
+</script>
+<script>
+    function isMobile() {
+        if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)))
+            return true;
+        else
+            return false;
+    }
+    if (isMobile() == false) {
+        // console.log(555)
+        // window.location.href = "file:///E:/%E4%BD%95%E6%99%93%E7%BA%A2/my_project/%E7%A7%9F%E6%88%BF%E5%95%86%E5%9F%8E%EF%BC%88%E4%BB%BF%E5%86%99%EF%BC%89/index.html";
+
+    }
+</script>
+
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="h_top"><img src="images/index_ztl.png" alt=""></div>
+        <div class="h_search" style="justify-content: space-evenly;">
+            <div class="hs_left"><img src="images/ditu_icon.png" alt=""></div>
+            <div class=" h_text">生活服务</div>
+            <div class="sh_right"><img src="images/shopping_cart.png" alt=""></div>
+        </div>
+    </div>
+
+
+    <!-- 轮播图 -->
+    <div class="banner">
+        <img src="images/img_tu01.jpg" alt="" style="width: 100%;  height: 50.5rem;
+        background-size: 100% 100%;">
+    </div>
+
+
+
+    <div class="wrap">
+        <!-- 生活缴费-->
+        <p class="f_title">生活缴费</p>
+        <div class="f_contain">
+            <ul>
+                <li>
+                    <a href="#"><i class="glyphicon glyphicon-tint" style="color: #0069b7;"></i> 水费</a>
+                </li>
+                <li>
+                    <a href="#"><i class="glyphicon glyphicon-flash" style="color: #ff7900;"></i> 电费</a>
+                </li>
+                <li>
+                    <a href="#"><i class="glyphicon glyphicon-globe" style="color: #229b91;"></i> 宽带</a>
+                </li>
+                <li>
+                    <a href="#"><i class="glyphicon glyphicon-fullscreen" style="color: #666666;"></i> 水费</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 生活服务 -->
+        <p class="f_title" style="margin-top: 4rem;">服务提供</p>
+        <div class="f_contain1">
+            <ul>
+                <li>
+                    <img src="images/baojie.jpg" alt="">
+                    <div class="on1" " >
+                        <p>保洁</p>
+                    </div>
+                </li>
+                <li>
+                    <img src=" images/banjia.jpg" alt="">
+                        <div class="on1">
+                            <p>搬家</p>
+                        </div>
+                </li>
+                <li>
+                    <img src="images/jiaxiu.jpg" alt="">
+                    <div class="on1">
+                        <p>家修</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 热门推荐 -->
+        <p class="f_title" style="margin-top: 4rem;">热门推荐<span>为你提供最优质的服务，享受生活的每一天 </span></p>
+        <div class="f_contain1">
+            <ul style="padding-bottom: 15.2rem;">
+                <li>
+                    <img src="images/baojie.jpg" alt="">
+                    <div class="on1" " >
+                        <p>保洁</p>
+                    </div>
+                </li>
+                <li>
+                    <img src=" images/banjia.jpg" alt="">
+                        <div class="on1">
+                            <p>搬家</p>
+                        </div>
+                </li>
+                <li>
+                    <img src="images/jiaxiu.jpg" alt="">
+                    <div class="on1">
+                        <p>家修</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <!-- 底部导航 -->
+    <div class="b_nav">
+        <ul>
+            <li>
+                <a href="index.html"><i class="glyphicon glyphicon-home"></i></i>首页</a>
+            </li>
+            <li>
+                <a href="shopping.html"><i class="glyphicon glyphicon-bed"></i></i>商城</a>
+            </li>
+            <li>
+                <a href="shfw.html" class="on"><i class="glyphicon glyphicon-gift"></i></i>生活服务</a>
+            </li>
+            <li>
+                <a href="#"><i class="glyphicon glyphicon-user"></i></i>个人中心</a>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+</body>
+<script>
+    AOS.init();
+
+    $(function () {
+        $(".s_btn>p").each(function () {
+            $(this).click(function () {
+                let s = $(this).index();
+                $(".btn_item").eq(s).show()
+                $(".btn_item").eq(s).siblings().hide()
+
+            })
+        });
+
+    })
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</html>
