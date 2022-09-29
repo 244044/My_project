@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<script>
+    function isMobile() {
+        if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)))
+            return true;
+        else
+            return false;
+    }
+    //地址自己修改成你的手机端地址
+    if (isMobile() == false){}
+        // window.location.href = "https://special.zhaopin.com/2022/shz/szqh090253/";
+</script>
+<script>
+    function Rem() {
+        var docE1 = document.documentElement
+        oSize = docE1.clientWidth / 100;
+        docE1.style.fontSize = oSize + 'px';
+    }
+    Rem();
+    window.addEventListener('resize', Rem, false);
+</script>
+
+<body onload="init()">
+    <div class="authorized">
+        <p>2048</p>
+    </div>
+    <div class="top">
+        <div class="restart" ontouchstart="restart()"> Restart</div>
+        <div class="score">
+            <p class="maxnum" id="num_p">最高值</p>
+            <p class="maxnum" id="num_v">0</p>
+        </div>
+    </div>
+    <article class="game">
+        <div class="square" id="f1"></div>
+        <div class="square" id="f2"></div>
+        <div class="square" id="f3"></div>
+        <div class="square" id="f4"></div>
+        <div class="square" id="f5"></div>
+        <div class="square" id="f6"></div>
+        <div class="square" id="f7"></div>
+        <div class="square" id="f8"></div>
+        <div class="square" id="f9"></div>
+        <div class="square" id="f10"></div>
+        <div class="square" id="f11"></div>
+        <div class="square" id="f12"></div>
+        <div class="square" id="f13"></div>
+        <div class="square" id="f14"></div>
+        <div class="square" id="f15"></div>
+        <div class="square" id="f16"></div>
+
+    </article>
+   <footer></footer>
+    
+</body>
+</html>

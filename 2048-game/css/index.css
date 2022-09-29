@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+body,
+ul,
+dl,
+dd,
+dt,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+textarea,
+form,
+select,
+fieldset,
+table,
+td,
+div,
+input {
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: none;
+}
+
+div {
+    text-align: left
+}
+
+a img {
+    border: 0
+}
+
+body {
+    /*color:#333; text-align:center; font:12px "宋体";*/
+    /* background: #000; */
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+    vertical-align: 0
+}
+
+a {
+    outline-style: none;
+    color: #535353;
+    text-decoration: none
+}
+
+a:hover {
+    color: #D40000;
+    text-decoration: none
+}
+
+body,
+html {
+    width: 100vw;
+    height: 100vw;
+    padding: 0;
+    margin: 0;
+    background-color: papayawhip;
+    /* background: fixed; */
+}
+
+.authorized {
+    width: 100%;
+    color: grey;
+    font-size: 8rem;
+    margin-top: 7rem;
+}
+
+.authorized p {
+    color: grey;
+    font-size: 100%;
+    text-align: center;
+}
+
+.restart {
+    width: 25vw;
+    height: 10vw;
+    background-color: #99cccc;
+    text-align: center;
+    line-height: 10vw;
+    font-size: 6rem;
+    color: #fff;
+    border-radius: 5% 5% 5% 5%;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 9rem;
+}
+
+.score {
+
+
+    width: 45vw;
+    height: 10vw;
+    background-color: #99cccc;
+    text-align: center;
+    line-height: 10vw;
+    font-size: 6rem;
+    color: #fff;
+    border-radius: 5% 5% 5% 5%;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#num_p {}
+
+#num_v {
+
+    color: #ffd700;
+    font-size: 6.5rem;
+}
+
+.game {
+    position: absolute;
+    top: 50rem;
+    left: 2.5rem;
+    width: 95vw;
+    height: 95vw;
+    background-color: #AAAA;
+    border-radius: 5% 5% 5% 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin: auto; */
+}
+
+.square {
+    width: 23%;
+    height: 23%;
+    background-color: #DDD;
+    color: white;
+    text-align: center;
+    line-height: 133%;
+    font-size: 15rem;
+    border-radius: 15%;
+}
+
+/* #reset1 {} */
+#reset1 {
+    position: absolute;
+    top: 49rem;
+    left: 2.5rem;
+    width: 95vw;
+    height: 60vw;
+    line-height: 23vw;
+    font-size: 14rem;
+    background: rgba(250, 250, 250, 0.5);
+    text-align: center;
+    padding-top: 35%;
+    color: grey;
+    border-radius: 5% 5% 5% 5%;
+    /* margin: 0 auto; */
+}
+
+/* #reset2 {} */
