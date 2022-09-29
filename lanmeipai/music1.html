@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="container">
+            <a href="#"><img src="img/logo.png" alt=""></a>
+            <ul class="nav">
+                <li><a href="index.html">首页</a></li>
+                <li class="active"><a href="music1.html">乐章</a></li>
+                <li><a href="lmj.html">蓝莓酱</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <!-- 彩灯 -->
+        <ul class="lightrope">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="m_main">
+            <div class="m_top">
+                <div class="m_title">
+                    <h3>默-那英[《何以笙萧默》电影主题曲]</h3>
+                </div>
+                <div class="m_video">
+
+                    <img src="img/thumb-card5.png" alt="">
+                    <div class="ms_text">
+                        <p>不知道多少人来到大理不想离开，也不知道多少人走了之后又想着回来。
+                            这就是大理，庸懒散拖，但又不失韵味。
+                            你可以窝在人民路晒太阳发呆，也可以骑着单车，不知道多少人来到大理不想离开，也不知道多少人走了之后又想着回来。
+                            这就是大理，庸懒散拖，但又不失韵味。
+                            你可以窝在人民路晒太阳发呆，也可以骑着单车，不知道多少人来到大理不想离开，也不知道多少人走了之后又想着回来。
+                            这就是大理，庸懒散拖，但又不失韵味。
+                            你可以窝在人民路晒太阳发呆，也可以骑着单车，</p>
+                    </div>
+
+
+                </div>
+                <div class="m_bottom">
+                    <div class="play-btn">
+                        <img src="img/play-btn_03.png" alt="">
+                        <!-- <img src="img/pause.png" alt=""> -->
+                    </div>
+                    <div class="current">00:00</div>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <div class="duration">08:20</div>
+                </div>
+            </div>
+            <div class="m_bot">
+                <div class="article-title">
+                    <h3>[游记]洱海仍有一片</h3>
+                </div>
+                <div class="article-info">
+                    <p> 不知道多少人来到大理不想离开，也不知道多少人走了之后又想着回来。
+                        这就是大理，庸懒散拖，但又不失韵味。
+                        你可以窝在人民路晒太阳发呆，也可以骑着单车，</p>
+
+                </div>
+            </div>
+        </div>
+        <audio src="res/那英-默.mp3" controls id="audio" style="display: none;"></audio>
+
+
+        <!-- 星星 -->
+        <div class="an">
+            <img src="img/coder_star_1.png" alt="">
+        </div>
+        <div class="an1">
+            <img src="img/coder_star_1.png" alt="">
+        </div>
+        <div class="an2">
+            <img src="img/coder_star_1.png" alt="">
+        </div>
+
+        <div class="an3">
+            <img src="img/coder_star_1.png" alt="">
+        </div>
+        <div class="an4">
+            <img src="img/coder_star_1.png" alt="">
+        </div>
+        <div class="an5">
+            <img src="img/coder_star_1.png" alt="">
+        </div>
+    </div>
+
+
+</body>
+<script src="js/jquery-1.12.3.min.js"></script>
+<script src="js/swiper.animate1.0.3.min.js"></script>
+<script>
+    AOS.init();
+
+    // 给图片添加动画
+    // let a_rqq = setInterval(function () {
+    //     $('.rqq').addClass('r_active');
+    // }, 2000)
+
+    $(function () {
+        // 音频的播放步骤：
+        // 1、获取元素
+        // 2、点击按钮---判断音频是否暂停的true暂停 false播放
+        // 3.若是暂停的--------让音乐播放  同事修改图片
+        // 4、当音频播放的时候，获取当前的时间和总时间
+        // 5、进度条的长度增加=当前的时间/总时间*100 +%
+        // 6、播放完毕
+        const audio = document.getElementById('audio')
+        // 获取总时长
+        // oncanplay	在用户可以开始播放视频/音频（audio/video）时触发   
+        //视频/音频（audio/video）在加载过程中，触发的
+        console.log(audio.duration);
+        audio.oncanplay = function () {
+            $('.duration').html(times(audio.duration))
+            // 点击播放事件
+            $('.play-btn img').click(function () {
+                if (audio.paused) {
+                    audio.play();
+                    $(this).attr('src', 'img/pause.png')
+                } else {
+                    audio.pause();
+                    $(".play-btn img").attr('src', 'img/play-btn_03.png')
+                }
+            })
+        }
+        function times(num) {
+
+            // num 总秒数
+            var m = parseInt(num / 60);
+            var s = parseInt(num % 60);
+            m = m > 9 ? m : '0' + m;
+            s = s > 9 ? s : '0' + s;
+            return m + ':' + s;
+        }
+
+        //ontimeupdate	当前音频/视频播放时间发生改变时触发
+        audio.ontimeupdate = function () {
+            //   获取播放时间和总时间
+            // currentTime：返回当前音频/视频的播放时间duration   返回当前音频、视频的总时长
+
+            $('.current').html(times(audio.currentTime))
+            // 进度条
+            var precent = audio.currentTime / audio.duration * 100 + '%';
+            $('.progress-bar').css('width', precent);
+
+            // 判断是否播放完毕  ended		返回当前音频/视频是否播放结束
+            if (audio.ended) {
+                console.log('播放完毕')
+                audio.pause();
+                $(".play-btn img").attr('src', 'img/play-btn_03.png')
+
+            }
+        }
+        // 获取文章的数据
+        $.ajax({
+            type: 'get',
+            url: 'http://iwenwiki.com/api/blueberrypai/getInterestingInfo.php',
+            success: function (res) {
+                var info = res.interestingInfo;
+                // console.log(res);
+                // 1/文章数据
+                $(".article-title h3").html(info.interest_title);
+                // 文字信息
+                // console.log(info.interest_cont);
+                //处理文字格式：方法1：<pre></pre> 保留文本默认格式 (缺点：不会自动换行)
+                // $(".article-info").html('<pre>'+info.interest_cont+'</pre>');
+                //方法2：替换回车   php返回的换行：\r\n  
+                var text = info.interest_cont.replace(/\r\n/g, '<br/>');
+                $(".article-info").html(text);
+
+            }
+        })
+
+
+    })
+
+
+
+</script>
+
+</html>

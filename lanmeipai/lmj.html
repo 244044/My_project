@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="container">
+            <a href="#"><img src="img/logo.png" alt=""></a>
+            <ul class="nav">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="music1.html">乐章</a></li>
+                <li class="active"><a href="lmj.html">蓝莓酱</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- 内容 -->
+    <div class="l_container pageContent">
+        <ul>
+            <!-- <li>
+                <img src="img/dog.jpg" alt="">
+                <span>夏天</span>
+            </li> -->
+        </ul>
+    </div>
+    <!-- 分页 -->
+    <class class="ts-page">
+        <!-- <span class="tspage-start disable">首页</span>
+        <span class="tspage-before">上一页</span>
+        <spam class="tspage-ell">...</spam>
+        <span class="page">1</span>
+        <span class="page on">2</span>
+        <span class="page">3</span>
+        <span class="page">4</span>
+        <span class="page">5</span>
+        <spam class="tspage-ell">...</spam>
+        <span class="tspage-after">下一页</span>
+        <span class="tspage-end">尾页</span> -->
+    </class>
+
+
+
+</body>
+<script src="js/jquery-1.12.3.min.js"></script>
+<script src="js/swiper.animate1.0.3.min.js"></script>
+<script>
+    AOS.init();
+    // $(function () {
+    //     // 分页
+    //     //动态创建元素，添加事件
+    //     let tsPage = $('.ts-page');
+    //     // current:当前选中的页码，maxPage：总的页码
+    //     function addPage(current, maxPage) {
+    //         // 清空一下元素
+    //         tsPage.html('');
+    //         // 显示首页和 上一页
+    //         if (current > 1) {
+    //             tsPage.append(`<span class="tspage-start disable">首页</span> <span class="tspage-before">上一页</span>`);
+
+    //         } else {
+    //             tsPage.append(`<span class="tspage-before disable">上一页</span>`);
+    //         }
+    //         // 显示首页  上一页 【...】
+    //         if (current > 3 && maxPage > 5) {
+    //             tsPage.append(`<span class="tspage-ell">...</span>`)
+    //         }
+
+    //         // 显示： 首页  上一页 ... 2 3 [4] 5 6 
+    //         // 页码规律：
+    //         let i = current - 2;
+    //         let end = current + 2;
+    //         if (current == 1 || current == 2) {
+    //             i = 1;
+    //             end = maxPage < 5 ? maxPage : 5;
+    //         }
+    //         if (current == maxPage - 1 || current == maxPage) {
+    //             i = maxPage - 4 < 1 ? 1 : maxPage - 4;
+    //             end = maxPage;
+    //         }
+
+    //         for (; i <= end; i++) {
+    //             if (i == current) {
+    //                 tsPage.append('<span class="page on">' + i + '</span>')
+    //             } else {
+    //                 tsPage.append('<span class="page">' + i + '</span>')
+    //             }
+
+    //         }
+    //         //显示：首页  上一页 ... 2 3 [4] 5 6  【...】
+    //         if (maxPage > 5 && current < maxPage - 2) {
+    //             tsPage.append('<span class="tspage-ell">...</span>')
+    //         }
+    //         //显示：最后的 下一页 尾页
+    //         if (current < maxPage) {
+    //             tsPage.append(`<span class="tspage-after">下一页</span>
+    //         <span class="tspage-end">尾页</span>`)
+    //         } else {
+    //             tsPage.append('<span class="tspage-after disable">下一页</span>')
+    //         }
+
+
+    //     }
+
+    //     // 添加事件
+    //     function addEvent(maxPage) {
+    //         $('.ts-page').off('click');
+    //         // 点击中间的页码---高亮状态
+
+    //         $('.ts-page').on("click", ".page", function () {
+    //             let num = parseInt($(this).html())
+    //             console.log(num);
+    //             // 点击页码获取数据
+    //             getData(num);
+    //         })
+    //         // 2、点击首页和尾页
+    //         $(".ts-page").on('click', '.tspage-start', function () {
+    //             getData(1);
+    //         })
+    //         $(".ts-page").on('click', '.tspage-end', function () {
+    //             getData(maxPage);
+    //         })
+
+    //         // 点击下一页----获取当前的高亮页码  +1
+    //         $(".ts-page").on('click', '.tspage-after', function () {
+    //             var num = parseInt($(this).siblings('.on').html());
+    //             num++;
+    //             console.log(num);
+    //             if (num > maxPage) {
+    //                 // num=maxPage;
+    //                 return;
+    //             }
+    //             // addPage(num,maxPage)
+    //             getData(num)
+    //         })
+    //         //4.上一页
+    //         $(".ts-page").on('click', '.tspage-before', function () {
+    //             var num = parseInt($(this).siblings('.on').html());
+    //             num--;
+    //             console.log(num);
+    //             if (num < 1) {
+    //                 // num=1;
+    //                 return;
+    //             }
+    //             // addPage(num,maxPage)
+    //             getData(num);
+    //         })
+
+    //     }
+
+
+    //     // 三、获取分页数据
+    //     getData(1)
+    //     function getData(num) {
+    //         $.ajax({
+    //             type: 'get',
+    //             url: 'http://iwenwiki.com/api/blueberrypai/getBlueBerryJamInfo.php',
+    //             data: {
+    //                 blueBerryjam_id: num
+    //             },
+    //             success: function (res) {
+
+    //                 console.log(res);
+    //                 // 最大页码数
+    //                 var maxPage = res.maxPage;
+    //                 // 获取数据
+    //                 var arr = res.blueBerryjam;
+    //                 var str = '';
+    //                 for (var i = 0; i < arr.length; i++) {
+    //                     var imgUrl = arr[i].img.replace(/iwen.wiki\/sxtstu/g, 'iwenwiki.com/api')
+    //                     str += `<li>
+    //             <img src="${imgUrl}" alt="">
+    //             <span>${arr[i].title}</span>
+    //         </li>`;
+    //                 }
+    //                 $(".pageContent ul").append(str);
+    //                 // 数据渲染完毕----显示分页器
+    //                 addPage(num, maxPage)
+    //                 addEvent(maxPage)
+    //                 // 返回顶部
+    //                 $(window).scrollTop(0);
+
+    //             }
+    //         })
+    //     }
+
+    // })
+
+
+
+    $(function () {
+
+        //一、选项卡
+        //1.点击li 让当前的li变高亮的状态  其他的li取消高亮
+        $(".tab li").click(function () {
+            $(this).addClass('tabActive').siblings().removeClass('tabActive');
+            //2.获取当前点击的li的下标 
+            var index = $(this).index();
+            //3.点击li对应的下标的div容器显示
+            $(".box >div").eq(index).addClass('show').siblings().removeClass('show');
+        })
+
+        //2.分页----------------------
+        //1.动态创建元素   2.添加事件
+        var tsPage = $(".ts-page");
+        // addPage(8,10);//参数1：当前选中的页码   参数2：总的页码数
+        function addPage(current, maxPage) {
+            //清空元素
+            tsPage.html('');
+            //显示: 首页  上一页
+            if (current > 1) {
+                tsPage.append(`<span class="tspage-start">首页</span>
+        <span class="tspage-before">上一页</span>`);
+            } else {
+                tsPage.append(`<span class="tspage-before disable">上一页</span>`);
+            }
+            //显示: 首页  上一页 [...]
+            if (current > 3 && maxPage > 5) {
+                tsPage.append('<span class="tspage-ell">...</span>')
+            }
+            //显示： 首页  上一页 ... 2 3 [4] 5 6 
+            //页码规律： current-2 current-2  current current+1 current+2
+            var i = current - 2;//current=2 i=0  current=1 i=-1
+            var end = current + 2;
+            if (current == 1 || current == 2) {
+                i = 1;
+                end = maxPage < 5 ? maxPage : 5;
+            }
+            if (current == maxPage - 1 || current == maxPage) {
+                i = maxPage - 4 < 1 ? 1 : maxPage - 4;
+                end = maxPage;
+            }
+            for (; i <= end; i++) {
+                if (i == current) {
+                    tsPage.append('<span class="page on">' + i + '</span>')
+                } else {
+                    tsPage.append('<span class="page">' + i + '</span>')
+                }
+            }
+            //显示：首页  上一页 ... 2 3 [4] 5 6  【...】
+            if (maxPage > 5 && current < maxPage - 2) {
+                tsPage.append('<span class="tspage-ell">...</span>')
+            }
+            //显示：最后的 下一页 尾页
+            if (current < maxPage) {
+                tsPage.append(`<span class="tspage-after">下一页</span>
+        <span class="tspage-end">尾页</span>`)
+            } else {
+                tsPage.append('<span class="tspage-after disable">下一页</span>')
+            }
+
+        }
+        //2.添加事件----------------
+        // addEvent(10)
+        function addEvent(maxPage) {
+            //on事件绑定 ---事件穿透----动态   解绑
+            $(".ts-page").off('click');
+
+            //1.点击中间的页码--高亮状态
+            $(".ts-page").on('click', '.page', function () {
+                var num = parseInt($(this).html())
+                console.log(num);
+                // addPage(num,maxPage)//注释掉：以为getData里面已经调用了
+                //点击页码--获取数据
+                getData(num);
+            })
+            //2.首页 和尾页 
+            $(".ts-page").on('click', '.tspage-start', function () {
+                // addPage(1,maxPage)
+                getData(1);
+            })
+            //尾页
+            $(".ts-page").on('click', '.tspage-end', function () {
+                // addPage(maxPage,maxPage)
+                getData(maxPage)
+            })
+            //3.下一页  ---获取当前的高亮页码 +1 
+            $(".ts-page").on('click', '.tspage-after', function () {
+                var num = parseInt($(this).siblings('.on').html());
+                num++;
+                console.log(num);
+                if (num > maxPage) {
+                    // num=maxPage;
+                    return;
+                }
+                // addPage(num,maxPage)
+                getData(num)
+            })
+            //4.上一页
+            $(".ts-page").on('click', '.tspage-before', function () {
+                var num = parseInt($(this).siblings('.on').html());
+                num--;
+                console.log(num);
+                if (num < 1) {
+                    // num=1;
+                    return;
+                }
+                // addPage(num,maxPage)
+                getData(num);
+            })
+
+        }
+
+        //三、获取分页数据-----------------------
+        getData(1)
+        function getData(num) {
+            $.ajax({
+                type: 'get',
+                url: 'http://iwenwiki.com/api/blueberrypai/getBlueBerryJamInfo.php',
+                data: {
+                    blueBerryjam_id: num
+                },
+                success: function (res) {
+                    console.log(res);
+                    //最大页码数
+                    var maxPage = res.maxPage;
+                    //获取数据
+                    var arr = res.blueBerryJam;
+                    var str = '';
+                    for (var i = 0; i < arr.length; i++) {
+                        var imgUrl = arr[i].img.replace(/iwen.wiki\/sxtstu/g, 'iwenwiki.com/api')
+                        str += `  <li>
+                    <img src="${imgUrl}" alt="">
+                    <span>${arr[i].title}</span>
+                </li>`;
+                    }
+                    //
+                    $(".pageContent ul").html(str);
+
+                    //数据渲染完毕---显示分页器
+                    addPage(num, maxPage)
+                    addEvent(maxPage)
+                    //返回顶部
+                    $(window).scrollTop(0);
+                }
+            })
+        }
+
+
+    })
+
+
+
+
+</script>
+
+</html>
