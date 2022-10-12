@@ -1,0 +1,136 @@
+.simple-swiper-container {
+	width: 100%;
+	/* border-radius: 10px; */
+	height: 550px;
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid rgb(226, 226, 226);
+}
+
+.simple-swiper-container>.swiper-wrapper {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	min-height: 220px;
+}
+
+.simple-swiper-container>.swiper-wrapper>.swiper-slider {
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+}
+
+.simple-swiper-container>.swiper-wrapper>.swiper-slider>.swiper-items img {
+	border: none;
+	height: 100%;
+	width: 100%;
+}
+
+.swiper-items>a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	text-indent: 2em;
+	text-decoration: none;
+	color: black;
+}
+
+.simple-swiper-container>.btn {
+	position: absolute;
+	cursor: pointer;
+	z-index: 5;
+	top: 45%;
+	/* display: block; */
+	opacity: 0;
+}
+
+.simple-swiper-container>.btn-prev {
+	left: 0;
+}
+
+.simple-swiper-container>.btn-next::before {
+	border-left: 12px solid #2a82d5;
+	border-right: 12px solid transparent;
+}
+
+.simple-swiper-container>.btn-next::before,
+.simple-swiper-container>.btn-prev::before {
+	content: "";
+	border-top: 12px solid transparent;
+	border-bottom: 12px solid transparent;
+	display: block;
+}
+
+.simple-swiper-container>.btn-prev::before {
+	border-left: 12px solid transparent;
+	border-right: 12px solid #2a82d5;
+}
+
+.simple-swiper-container>.btn-next {
+	right: 0;
+}
+
+.simple-swiper-container>.pagination {
+	position: absolute;
+	bottom: 15px;
+	width: 100%;
+	height: auto;
+	z-index: 5;
+	text-align: center;
+}
+
+.pagination>.pagination-items {
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	box-sizing: border-box;
+	cursor: pointer;
+	background-color: #fff;
+	opacity: 0.65;
+	border-radius: 50%;
+	/* border: 2px solid #eaeaea; */
+	transition: all 0.3s;
+}
+
+.pagination-items-active {
+	background-color: #fff !important;
+	opacity: 1 !important;
+	transform: scale(1.4);
+}
+
+.no-click a {
+	pointer-events: none;
+}
+
+/*cube*/
+.swiper-cube-wrapper{
+	
+}
+.swiper-cube-wrapper>.swiper-slider {
+	position: relative;
+	border:1px solid ;
+	box-sizing: border-box;
+	transform-style: preserve-3d;
+	transform: rotateX(80deg);
+}
+
+.swiper-effect-cube {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border:1px solid green;
+	box-sizing: border-box;
+	transform: rotateY(-0deg) translateZ(400px);
+}

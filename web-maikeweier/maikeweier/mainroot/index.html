@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+    <link rel="stylesheet" href="./css/swiper.css" />
+    <script src="./js/swiper.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/simple_style.css" />
+    <script type="text/javascript" src="js/simple_swiper.js"></script>
+
+    <title>仿麦克韦尔网页</title>
+</head>
+
+<body>
+    <div class="index">
+        <div class="nav">
+            <div class="top">
+                <a href="index.html"><img src="" alt=""></a>
+                <div class="t_nav">
+                    <a href="index.html" class="on">首页</a>
+                    <a href="zpgw.html">岗位推荐</a>
+                    <a href="gszp.html">内容介绍</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="m_item">
+            <a href="zpgw.html?id=1" class="m_l">
+                <span class="zl_title">
+                    应届生 <br><i>（本硕） </i>
+                </span>
+                <span class="zl_text">
+                    <span>2017年8月-2020年7月 <br><i>毕业于中国高校的应届生 </i></span>
+                    <span>2021年5月-2024年12月<br><i>毕业于中国港澳台及海外院校的应届生</i></span>
+
+            </a>
+            <a href="zpgw.html?id=2" class="m_l">
+                <span class="zl_title">
+                    实习生 <br><i>（博士） </i>
+                </span>
+                <span class="zl_text">
+                    <span>2024-2026届近3年未毕业生</span>
+                    <span>海内外2024及2026应届未毕业生</span>
+
+            </a>
+
+
+        </div>
+
+        <div class="zhaopin">
+            <div class="z_title">招聘流程</div>
+            <div class="z_nav">
+                <p class="on1 "><span>技术类</span></p>
+                <p><span>非技术类</span></p>
+            </div>
+            <div class="z_item">
+                <img src="images/zp_yanfa.png" alt="">
+                <img src="images/zp_feiyanfa.png" alt="" class="s-nav2">
+            </div>
+
+        </div>
+
+        <div class="gsjs">
+            <div class="g_title">文字介绍</div>
+            <img src="images/l_1.png" alt="" style="width: 100%;">
+            <span class="g_text1">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;世间万物，都在闪耀着自己的光辉。牡丹以它的雍容华贵而惹人喜爱，菊花则以它的闲情飘逸令人赞叹，于是便有了李白的“云想衣裳花想容，春风拂槛露华秾”，便有了陶潜的“采菊东篱下，悠然见南山”。这是两种不同的风韵，千百年来世人也无法辩出高低，就草草造出个“各有千秋”来，把这个问题留给后人。古人真是太精明了，这种永远也不会有结果的问题，他们想得很透彻，“各有千秋”，世间万物，都在闪烁着自己的光辉。
+            </span>
+            <div class="g_mitem1">
+                <p>
+                    【世间与万物】
+                </p>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;李白与杜甫，同在盛唐，同对后世影响极大。李白是个乐观的人，他的诗篇浪漫潇洒，奔放昂扬，而杜甫不是李白，他的诗雄浑厚重，素以诗史着称。二人的诗风与各自的性格有很大的关联，二人的性格不同，开创的派别自然不同，世人就把这两个截然不同的大诗人并称为“李杜”。</span>
+            </div>
+            <div class="g_mitem2">
+                <p>
+                    【李白与杜甫】
+                </p>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;牛顿画不出传世奇作《蒙娜丽莎》，达芬奇搞不懂什么叫万有引力，爱因斯坦无法向艾森豪威尔那样在战场上傲视群雄，鲁迅不可能在球场上风驰电掣。他们却在自己特长的范围内，闪烁着不尽的光辉。试想他们放弃了自己的方式，历史会是怎样？中国自古就有“东施效颦”“邯郸学步”之类的成语，都时刻警示着后人：你自己有你自己的风格，你有你自己的方式，活在别人的方式下，终究遭人唾弃。
+                    正所谓，杨柳自有杨柳的洒脱，青松自有青松的壮美。每一个生命，都闪耀着独特的光辉，展示着无限的魅力。你也是一道独特的风景。
+                </span>
+            </div>
+            <a href="#"><img src="images/i_video.png" alt=""></a>
+
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+
+<script>
+    $(function () {
+        $('.z_nav>p').each(function () {
+            $(this).click(function () {
+                $(this).addClass('on1')
+                $(this).siblings().removeClass('on1')
+                let i = $(this).index()
+                $(this).parent().next().children().eq(i).removeClass('s-nav2')
+                $(this).parent().next().children().eq(i).siblings().addClass('s-nav2')
+            })
+        });
+
+
+
+    })
+</script>
+
+</html>
