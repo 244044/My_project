@@ -1,0 +1,40 @@
+<!--pages/cart/cart.wxml-->
+<view class="goodslist" wx:for="{{goodsList}}" wx:key="*this">
+    <view class="left">
+        <image src="{{item.goodsImage}}"></image>
+    </view>
+    <view class="right">
+        <view class="goods_name">
+            <text>{{item.goodsName}}</text>
+        </view>
+        <!-- <view class="goods_address">
+            <text>{{item.goodsAddress}}</text>
+        </view> -->
+        <view class="goods_price">
+            <text>${{item.goodsPrice}}</text>
+        </view>
+        <view class="carBtn">
+            <view class="btn" bindtap="reduce" data-id="{{index}}">-</view>
+            <text class="num">{{item.num}}</text>
+            <view class="btn" bindtap="add" data-id="{{index}}">+</view>
+        </view>
+        <view class="car" catchtap="del" data-id="{{index}}">
+            <image src="/images/shanchu.png"></image>
+        </view>
+    </view>
+</view>
+<!-- 底部导航 -->
+<view class="bottomNav" wx:if="{{goodsList.length}}">
+    <view class="warp">
+        总价格:<text>${{totalData}}</text>
+        <navigator class="order" url="/pages/pay/pay?id=0" hover-class="none">
+        
+        <view >下单</view>
+    </navigator>
+    </view>
+</view>
+<!-- 购物车为空提示 -->
+<view class="goodsUnll" wx:if="{{!goodsList.length}}">
+    <image src="/images/car.png"></image>
+    <view>购物车为空，请去选择商品</view>
+</view>

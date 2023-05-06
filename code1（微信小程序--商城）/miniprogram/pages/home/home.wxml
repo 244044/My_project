@@ -1,0 +1,140 @@
+<!--pages/home/home.wxml-->
+<!-- 轮播图 -->
+<!-- {{msg}} -->
+<view class="banner">
+    <swiper indicator-dots="true" 
+    indicator-color="#fff"
+    indicator-active-color="red"
+    autoplay="true">
+        <block wx:for="{{imgs}}" wx:key="*this">
+            <swiper-item>
+                <image mode="withFix" src="{{item}}">
+                </image>
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
+<!-- <swiper-item>
+            <image mode="withFix" src="/images/1.jfif">
+            </image>
+        </swiper-item>
+        <swiper-item>
+            <image mode="withFix" src="/images/2.jfif">
+            </image>
+        </swiper-item>
+        <swiper-item>
+            <image mode="withFix" src="/images/3.jfif">
+            </image>
+        </swiper-item> -->
+<!-- </swiper>
+</view> -->
+<!-- 商品列表 -->
+<view class="category"> 
+    <view class="item" wx:for="{{iconArray}}" wx:key="*this" >
+        
+        <image mode="withFix" src="{{item.url}}"></image>
+        <text>{{item.text}}</text>
+   
+    </view>
+
+</view>
+<!-- </view>
+    <view class="item">
+        <image src="/images/icon-fujin.png"></image>
+        <text>附近</text>
+    </view>
+    <view class="item">
+        <image src="/images/icon-fuli.png"></image>
+        <text>福利</text>
+    </view>
+    <view class="item">
+        <image src="/images/icon-muma.png"></image>
+        <text>购物</text>
+    </view>
+    <view class="item">
+        <image src="/images/icon-qinzi.png"></image>
+        <text>亲子</text>
+    </view>
+    <view class="item">
+        <image src="/images/icon-tiyu.png"></image>
+        <text>体育</text>
+    </view>
+    <view class="item">
+        <image src="/images/icon-zhanhui.png"></image>
+        <text>展会</text>
+    </view>
+    <view class="item">
+        <image src="/images/icon-xingxing.png"></image>
+        <text>星星</text>
+    </view> -->
+
+<!-- </view> -->
+<!-- 商品列表 -->
+<!-- <view class="commonTitle">
+    <text>商品列表</text>
+</view>
+<view class="goodslist">
+    <view class="left">
+        <image src="/images/lists02.webp"></image>
+    </view>
+    <view class="right">
+        <view class="good_name">
+            <text>商品名称</text>
+        </view>
+        <view class="good_address">
+            <text>广州</text>
+        </view>
+        <view class="good_price">
+            <text>¥222.00</text>
+        </view>
+        <view class="car">
+            <image src="/images/car.png"></image>
+        </view>
+    </view>
+</view> -->
+
+<view class="commonTitle">
+    <text>商品列表</text>
+</view>
+
+<view class="goodslist" wx:for="{{goodsList}}" wx:key="*this" bindtap="toDetails" data-index="{{index}}">
+    <view class="left">
+        <image mode="withFix" src="{{item.goodsImage}}"></image>
+    </view>
+    <!-- <navigator class="right" url="/pages/details/details" hover-class="none"> -->
+        <view class="right">
+            <view class="goods_name">
+                <text>{{item.goodsName}}</text>
+            </view>
+            <view class="goods_address">
+                <text>{{item.goodsAddress}}</text>
+            </view>
+            <view class="goods_price">
+                <text>${{item.goodsPrice}}</text>
+            </view>
+
+            <view class="car">
+                <image src="/images/car.png"></image>
+            </view>
+        </view>
+    <!-- </navigator> -->
+</view>
+<!-- <view class="goodslist">
+    <view class="left">
+        <image src="/images/lists02.webp"></image>
+    </view>
+    <view class="right">
+        <view class="good_name">
+            <text>商品名称</text>
+        </view>
+        <view class="good_address">
+            <text>广州</text>
+        </view>
+        <view class="good_price">
+            <text>¥222.00</text>
+        </view>
+        <view class="car">
+            <image src="/images/car.png"></image>
+        </view>
+    </view>
+</view> -->

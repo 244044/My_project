@@ -1,0 +1,92 @@
+<view class="swiperTab">
+	<block wx:for="{{tabContent}}" wx:key="tabContent">
+		<view class="{{tabIndex == index ? 'con' : ''}}" bindtap="getTabIndex" data-index="{{index}}">{{item.name}}</view>
+	</block>
+</view>
+
+<swiper current="{{tabIndex}}" bindchange="getContentIndex" style="height:{{Hei}}px" class="swiperContent">
+   <!-- 全部订单 -->
+	<swiper-item>
+		<scroll-view scroll-y="true" style="height:{{Hei}}px">
+			<view class="item" wx:for="{{allOrderList}}" wx:key="allOrderList">
+				<view class="goods">
+					<image src="{{item.goodsImage}}" mode="widthFix"></image>
+					<view class="middle">
+						<view class="title">{{item.goodsName}}</view>
+						<text class="other">七天无理由退换</text>
+					</view>
+					<view class="right">
+						<view class="price">￥{{item.goodsPrice}}</view>
+						<view class="num">×{{item.num}}</view>
+					</view>
+				</view>
+				<view class="total">
+					<view class="totalPrice">
+						<view class="left">总价:￥{{item.goodsPrice * item.num}}</view>
+						<view>需付款:￥{{item.goodsPrice * item.num}}</view>
+					</view>
+				</view>
+				<view class="down">
+					<view class="btn" bindtap="allorderBtn" 
+					data-index="{{index}}">{{item.btnText}}</view>
+				</view>
+			</view>
+		</scroll-view>
+	</swiper-item>
+   <!-- 待付款 -->
+	<swiper-item>
+		<scroll-view scroll-y="true" style="height:{{Hei}}px">
+			<view class="item" wx:for="{{obligationList}}" wx:key="obligationList">
+				<view class="goods">
+					<image src="{{item.goodsImage}}" mode="widthFix"></image>
+					<view class="middle">
+						<view class="title">{{item.goodsName}}</view>
+						<text class="other">七天无理由退换</text>
+					</view>
+					<view class="right">
+						<view class="price">￥{{item.goodsPrice}}</view>
+						<view class="num">×{{item.num}}</view>
+					</view>
+				</view>
+				<view class="total">
+					<view class="totalPrice">
+						<view class="left">总价:￥{{item.goodsPrice * item.num}}</view>
+						<view>需付款:￥{{item.goodsPrice * item.num}}</view>
+					</view>
+				</view>
+				<view class="down">
+					<view class="btn" bindtap="obligationBtn" 
+					data-index="{{index}}">{{item.btnText}}</view>
+				</view>
+			</view>
+		</scroll-view>
+	</swiper-item>
+   <!-- 待收货 -->
+	<swiper-item>
+		<scroll-view scroll-y="true" style="height:{{Hei}}px">
+			<view class="item" wx:for="{{receivedList}}" wx:key="receivedList">
+				<view class="goods">
+					<image src="{{item.goodsImage}}" mode="widthFix"></image>
+					<view class="middle">
+						<view class="title">{{item.goodsName}}</view>
+						<text class="other">七天无理由退换</text>
+					</view>
+					<view class="right">
+						<view class="price">￥{{item.goodsPrice}}</view>
+						<view class="num">×{{item.num}}</view>
+					</view>
+				</view>
+				<view class="total">
+					<view class="totalPrice">
+						<view class="left">总价:￥{{item.goodsPrice * item.num}}</view>
+						<view>需付款:￥{{item.goodsPrice * item.num}}</view>
+					</view>
+				</view>
+				<view class="down">
+					<view class="btn" bindtap="receivedBtn" 
+					data-index="{{index}}">{{item.btnText}}</view>
+				</view>
+			</view>
+		</scroll-view>
+	</swiper-item>
+</swiper>

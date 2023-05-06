@@ -1,0 +1,63 @@
+<!--pages/details/details.wxml-->
+<!-- <text>pages/details/details.wxml</text> -->
+<!-- 轮播图 -->
+<!-- {{msg}} -->
+<view class="banner">
+    <swiper indicator-dots="true"
+    indicator-color="#fff"
+    indicator-active-color="red"
+     autoplay="true">
+        <block wx:for="{{imgs}}" wx:key="*this">
+            <swiper-item>
+                <image mode="withFix" src="{{item}}">
+                </image>
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
+<!-- 商品详情 -->
+<view class="goods_info" wx:for="{{goods}}">
+    <view class="goods_title">
+        <view class="title">
+{{item.goodsName}}
+        </view>
+        <view class="collect">
+            <image src="/images/icon-aixin1.png"></image>
+            <text>未收藏</text>
+        </view>
+    </view> 
+<view class="goods_price">
+    <text>¥{{item.goodsPrice}}</text>
+    <text class="old">¥3000</text>
+</view>
+<view class="bottom">
+    *本产品由{{item.goodsAddress}}某品牌商发货
+</view>
+</view>
+
+<view class="content">
+    <view class="title">商品详情</view>
+    <image mode="widthFix" src="/images/changtu03.jfif"></image>
+</view>
+<!-- 底部导航 -->
+<view class="bottomNav">
+<view class="ul">
+<view class="li" bindtap="goCart">
+<view class="cart">
+<image src="/images/car.png"></image>
+<view class="num">{{num}}</view>
+</view>
+</view>
+<view class="li" bindtap="goHome">
+前往商城
+</view>
+<view class="li" bindtap="setCart">
+加入购物车
+</view>
+<navigator class="li" url="/pages/pay/pay?id=1" hover-class="none">
+<view >
+前往支付
+</view>
+</navigator>
+</view>
+</view>

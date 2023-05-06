@@ -1,0 +1,71 @@
+<!--pages/category/category.wxml-->
+<!-- 左侧的滚动条 -->
+<scroll-view class="categoryItem" scroll-y="true" style="height:{{scrollHeight}}px">
+    <view class="item">
+      
+      <view 
+        
+      wx:for="{{categoryItem}}"
+        
+      wx:key="*this"
+        
+      wx:for-index="idx"
+        
+      class="{{index == idx ? 'con':''}}"
+        
+     data-id="{{idx}}"
+        
+     bindtap="setIndex"
+        
+      >
+  {{item}}
+        
+    </view>
+</view>
+</scroll-view>
+        <!-- <view>
+            按钮1
+        </view>
+        <view class="con">
+            按钮2
+        </view>
+        <view>
+            按钮3
+        </view>
+        <view>
+            按钮4
+        </view>
+        <view>
+            按钮5
+        </view>
+        <view>
+            按钮6
+        </view>
+        <view>
+            按钮7
+        </view> -->
+    
+<scroll-view class="contentItem"scroll-y="true"style="height:{{scrollHeight}}px">
+<view class="content">
+<view class="ul">
+<view class="li">
+<image  mode="withFix" src="/images/maoyi03.jpg"></image>
+<text>不完整老鹰提花高领女款毛衣</text>
+</view>
+<view class="li">
+<image  mode="withFix" src="/images/goods-txue03.jpg"></image>
+<text>新款潮牌原创设计感小众字母宽松半袖上衣服</text>
+</view>
+<view class="li">
+<image  mode="withFix" src="/images/maoyi04.jpg"></image>
+<text>毛衣爱心针织肖战宋威龙男女同款</text>
+</view>
+<view class="li">
+<image  mode="withFix" src="/images/weiyi01.jpg"></image>
+<text>长袖工装上衣女拼色抽绳套头卫衣休闲外套</text>
+</view>
+
+</view>
+</view>
+
+</scroll-view>

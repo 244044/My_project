@@ -1,0 +1,19 @@
+<!--pages/site/site.wxml-->
+<!-- 地址列表 -->
+<view class="site">
+
+  <view class="address">
+    <view class="userInfo">
+    <view class="info">张三 19987654321 收</view>
+    <view class="detailsite">广东省 广州市 天河区 珠吉路98号</view>
+  </view>
+    <image mode="widthFix" src="/images/icon-bianji.png"></image>
+  </view>
+</view>
+
+<!-- 底部按钮 -->
+<view class="down">
+  <navigator  url="/pages/editsite/editsite" hover-class="none">
+<view class="btn">新增地址</view>
+</navigator>
+</view>

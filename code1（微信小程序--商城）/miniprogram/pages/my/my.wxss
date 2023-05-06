@@ -1,0 +1,53 @@
+/* pages/my/my.wxss */
+.bg{
+    margin-top: 2rpx;
+    height: 400rpx;
+    background-color: rgb(37, 110, 112);
+}
+.head{
+    padding: 40rpx 0rpx;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    text-align: center;
+}
+.head image{
+    border-radius: 50%;
+    height: 180rpx;
+    width: 180rpx;
+    /* align-items: center; */
+    margin: 0 auto;
+
+}
+.bg .nickname{
+    font-size: 30rpx;
+    color: #f4f5f6;
+    margin-top: 6rpx;
+    text-align: center;
+    margin: 0 auto;
+}
+.ul{
+    border-top: 1px solid #e5e5e5;
+    margin-top: 40rpx;
+    background-color: #f4f5f6;
+
+}
+.ul .li{
+    border-bottom: 1px solid #e5e5e5;
+    height: 90rpx;
+    line-height: 90rpx;
+    font-size: 28rpx;
+    text-indent: 1em;
+    position: relative;
+}
+ .ul .li text{
+    position: absolute;
+    top:26rpx;
+    right: 20rpx;
+
+} 
+.bg button{
+    width: 60rpx;
+    height:80rpx ;
+    color: rgb(37, 110, 112);
+}

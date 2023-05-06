@@ -1,0 +1,79 @@
+/* pages/home/home.wxss */
+.banner image{
+    width:100%;
+}
+/* 整个布局 */
+page{
+    background-color: #f5f6f7;
+}
+.category{
+    /* flex伸缩布局 */
+    display:flex;
+    /* 让下一个盒子换行 */
+    flex-wrap: wrap;
+    padding-top: 30rpx;
+    background-color: #fff;
+    margin-bottom: 24rpx;
+}
+.category .item{
+    width: 25%;
+    text-align: center;
+    margin-bottom: 30rpx;
+}
+.category .item text{
+    display:block;
+    font-size: 25rpx;
+}
+.category image{
+    width:80rpx;
+    height: 80rpx;
+}
+.commonTitle{
+    height: 104rpx;
+    line-height: 104rpx;
+    background-color: #fff;
+    font-size: 36rpx;
+    border-bottom: 1px solid #bfbfbf;
+    text-indent: 1em;
+
+}
+.goodslist{
+    display: flex;
+    padding: 20rpx 0px;
+    background-color: #fff;
+    margin-bottom: 2rpx;
+}
+.goodslist .left{
+    width: 240rpx;
+    text-align: center;
+}
+.goodslist .left image{
+    width: 200rpx;
+    height: 200rpx;
+
+}
+.goodslist .right{
+    flex:1;
+    height: 200rpx;
+    position: relative;
+    margin-right: 20rpx;
+}
+.goodslist .right image{
+    width: 44rpx;
+    height: 44rpx;
+}
+.goodslist .right .goods_name{
+    font-size: 36rpx;
+    color: #808080;
+    height: 100rpx;
+    overflow: hidden;
+}
+.goodslist .right .goods_price{
+    font-size: 25rpx;
+    color: #ff002b;
+}
+.goodslist .right .car{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}

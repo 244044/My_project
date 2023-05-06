@@ -1,0 +1,40 @@
+<!--pages/pay/pay.wxml-->
+<view class="pay">
+<!-- 地址 -->
+<view class="site">
+<image mode="widthFix" src="/images/icon-dw.png"></image>
+<view class="text" wx:if="{{isSite}}">
+<view class="userinfo">张三  19987654321</view>
+<view class="detailsite">广东省 广州市 天河区 珠吉路 698号</view>
+</view>
+<view class="noSite" wx:else>请填写收货地址</view>
+<view class="right"></view>
+</view>
+
+<!-- 商品 -->
+<view class="goods">
+  <view class="head">
+<view class="name">商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称</view>
+<view class="num">数量</view>
+<view class="price">单价</view>
+
+</view>
+<view class="goodItem head" wx:for="{{payList}}" way:key="">
+<view class="name">{{item.goodsName}}</view>
+<view class="num">{{item.num}}</view>
+<view class="price">￥{{item.goodsPrice}}</view>
+</view>
+<input type="text" placeholder="填写备注" />
+</view>
+<!-- 底部 -->
+<view class="bottomNav">
+<view class="warp">
+总结: <text>${{totalPrice}}</text>
+<view class="order" bindtap="toPay">前往支付</view>
+</view>
+</view>
+
+
+
+
+</view>

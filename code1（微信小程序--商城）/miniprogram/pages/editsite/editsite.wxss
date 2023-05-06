@@ -1,0 +1,100 @@
+/* pages/editsite/editsite.wxss */
+page{
+  background: #f5f6f7;
+}
+/* 公共样式 */
+.title{
+  color: #808080;
+  font-size: 26rpx;
+}
+.info{
+  margin-top: 20rpx;
+  padding: 20rpx;
+  background: #fff;
+  border-radius: 10rpx;
+}
+.current{
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.current text{
+  padding-left: 10rpx;
+}
+.current input{
+  width: 73%;
+  height: 100rpx;
+  float: right;
+}
+.bottom{
+  border-bottom: 1px solid #f5f5f5;
+  
+}
+.site{
+  margin: 20rpx;
+
+}
+.site .consignee{
+  margin-top: 40rpx;
+}
+.site .profile{
+  margin-top: 40rpx;
+}
+.down{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 36rpx;
+  background: #246f6f;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+.down .del{
+  width: 50%;
+  float: left;
+  color: #246f6f;
+  background: #fff;
+}
+.down .edit{
+  width: 50%;
+  float: left;
+}
+
+/* 地址联动 */
+.bg{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  /* red green blue a-透明度（取值范围0-1） */
+  background: rgba(0, 0, 0, 0.3);
+
+}
+.address{
+  width: 100%;
+  height: 600rpx;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  background: #fff;
+}
+.address .btn{
+  padding: 0 30rpx;
+  line-height: 80rpx;
+  overflow: hidden;
+}
+.address .btn .cancle{
+  float: left;
+}
+.address .btn .sure{
+  float: right;
+}
+.address picker-view{
+  height: 500rpx;
+  text-align: center;
+}

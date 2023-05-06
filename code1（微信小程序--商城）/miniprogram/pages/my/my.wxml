@@ -1,0 +1,40 @@
+<!--pages/my/my.wxml-->
+<view class="bg">
+    <view class="head">
+        <image src="{{userInfo.avatarUrl}}"></image>
+        <!-- <text>{{userInfo.nickName}}</text> -->
+    </view>
+    <view class="nickname">
+        {{userInfo.nickName}}
+    </view>
+    <button bindtap="getUserProfile">登录</button>
+</view>
+
+
+
+<view class="ul">
+<navigator  url="/pages/order/order" hover-class="none"> 
+<view class="li">
+    我的订单
+    <text>></text>
+</view>
+</navigator>
+<view class="li">
+    我的收藏
+    <text>></text>
+</view>
+<navigator  url="/pages/site/site" hover-class="none">
+<view class="li" >
+    我的地址
+    <text>></text>
+</view>
+</navigator>
+<view class="li">
+    联系客服
+    <text>></text>
+</view>
+<view class="li">
+    关于我们
+    <text>></text>
+</view>
+</view>

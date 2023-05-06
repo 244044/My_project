@@ -1,0 +1,59 @@
+<!--pages/editsite/editsite.wxml-->
+<view class="site">
+  <!-- 收货人 -->
+  <view class="consignee">
+    <view class="title">收货人</view>
+    <view class="info">
+      <view class="name current bottom">
+        <text>姓名</text>
+        <input type="text" placeholder="真实姓名" />
+      </view>
+      <view class="phone current">
+        <text>电话</text>
+        <input type="text" placeholder="手机号码" />
+      </view>
+    </view>
+  </view>
+
+  <!-- 收货地址 -->
+  <view class="profile">
+    <view class="title">收货地址</view>
+    <view class="info">
+      <view class="area current ">
+        <text>地区信息</text>
+        <input type="text" placeholder="选择省/市/区" bindfocus="showSite" />
+      </view>
+      <view class="detailsite current">
+        <text>详细地址</text>
+        <input type="text" placeholder="街道门牌，楼层，房间号等信息" />
+      </view>
+    </view>
+  </view>
+
+  <!-- 底部按钮 -->
+  <view class="down">保存并使用</view>
+  <!-- <view class="down">
+<view class="del">删除</view>
+<view class="edit">保存并使用</view>
+</view> -->
+
+  <!-- 地址联动 -->
+  <view class="bg" wx:if="{{showAddress}}" bindtap="hideSite"></view>
+  <view class="address" wx:if="{{showAddress}}">
+    <view class="btn">
+      <view class="cancle" bindtap="hideSite">取消</view>
+      <view class="sure">确定</view>
+    </view>
+    <picker-view>
+      <picker-view-column>
+        <view wx:for="{{provinces}}" wx:key="provinces">{{item.name}}</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{citys}}" wx:key="citys">{{item.name}}</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{areas}}" wx:key="areas">{{item.name}}</view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+</view>

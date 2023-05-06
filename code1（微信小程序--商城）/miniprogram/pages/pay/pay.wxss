@@ -1,0 +1,104 @@
+/* pages/pay/pay.wxss */
+page{
+  background-color: #f5f6f7;
+
+}
+.site .noSite{
+  float: left;
+  line-height: 120rpx;
+}
+.site{
+  margin: 20rpx;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 20rpx;
+  padding: 20rpx 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120rpx;
+
+}
+.site image{
+  width: 60rpx;
+  float: left;
+  padding: 30rpx 10rpx;
+}
+.site .text{
+  float: left;
+}
+.site .text view{
+  line-height: 60rpx;
+}
+.site .right{
+  font-size: 60rpx;
+  line-height: 60rpx;
+  float: right;
+  padding: 30rpx 10rpx;
+}
+.goods{
+  margin: 180rpx 0 120rpx 0;
+}
+.goods .head{
+  width: 100%;
+  line-height: 100rpx;
+  background: #fff;
+overflow: hidden;
+margin-top: 20rpx;
+}
+.goods .head view{
+  float: left;
+}
+.goods .head .name{
+  width: 55%;
+  /* 超出隐藏 */
+  overflow: hidden;
+  /* 强制文本不换行 */
+  white-space: nowrap;
+  /* 超出部分用省略号表示 */
+  text-overflow: ellipsis;
+  padding-left: 20rpx;
+}
+.goods .head .num{
+  width: 20%;
+  text-align: center;
+}
+.goods .goodItem{
+  margin-top: 0;
+  background: #f5f6f7;
+}
+.goods input{
+  background: #fff;
+  height: 100rpx;
+  padding-left: 20rpx;
+}
+.bottomNav{
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  background-color: #fff;
+  width: 100%;
+  height: 100rpx;
+  border-bottom: 1rpx solid #f5f6f7;
+  font-size: 28rpx;
+z-index: 99;
+}
+.bottomNav .warp{
+  padding: 0 20rpx;
+  line-height: 100rpx;
+}
+.bottomNav .warp text{
+  color: #ff002b;
+}
+.bottomNav .warp .order{
+  float: right;
+  height: 60rpx;
+  line-height: 60rpx;
+  width: 160rpx;
+  color: #fff;
+  background-color: #246f6f;
+  text-align: center;
+  margin-top: 20rpx;
+  border-radius: 2rpx;
+}

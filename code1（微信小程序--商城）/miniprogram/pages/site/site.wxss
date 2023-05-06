@@ -1,0 +1,46 @@
+/* pages/site/site.wxss */
+page{
+  background: #f5f6f7;
+}
+.site{
+  margin: 20rpx 20rpx 100rpx;
+}
+.site .address{
+  background: #fff;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  overflow: hidden;
+}
+.site .address .userInfo{
+  float: left;
+  width: 85%;
+ 
+}
+.site .address .userInfo view{
+  
+  line-height: 60rpx;
+}
+.site .address image{
+  width: 80rpx;
+  float: right;
+  margin-top: 20rpx;
+}
+.down{
+  width: 100%;
+  height: 100rpx;
+  background: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+.down .btn{
+  width: 80%;
+  height: 80rpx;
+  background: #246f6f;
+  color: #fff;
+  margin: 10rpx auto;
+  line-height: 80rpx;
+  border-radius: 10rpx;
+  font-size: 36rpx;
+}
